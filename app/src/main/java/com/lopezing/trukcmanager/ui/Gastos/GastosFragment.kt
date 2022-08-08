@@ -6,21 +6,34 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.lopezing.trukcmanager.R
+import com.lopezing.trukcmanager.databinding.FragmentGastosBinding
+import com.lopezing.trukcmanager.databinding.FragmentPrincipalBinding
+import com.lopezing.trukcmanager.ui.principal.PrincipalViewModel
 
 class GastosFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = GastosFragment()
-    }
+    private var _binding: FragmentGastosBinding? = null
 
+    private val binding get() = _binding!!
     private lateinit var viewModel: GastosViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_gastos, container, false)
+    ): View {
+        val gastosViewModel =
+            ViewModelProvider(this).get(GastosViewModel::class.java)
+
+        _binding = FragmentGastosBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        val textView: TextView = binding.textPresent
+        gastosViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+        return root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

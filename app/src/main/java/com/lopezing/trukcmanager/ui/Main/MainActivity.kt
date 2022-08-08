@@ -8,6 +8,10 @@ import androidx.navigation.findNavController
 
 
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.lopezing.trukcmanager.R
 import com.lopezing.trukcmanager.databinding.ActivityMainBinding
 import com.lopezing.trukcmanager.databinding.FragmentIngresarBinding
@@ -16,14 +20,25 @@ import com.lopezing.trukcmanager.ui.ingresar.ingresarFragment
 //import com.lopezing.trukcmanager.ui.ingresar.ingresarFragmentDirections
 import java.util.*
 import kotlin.concurrent.timerTask
-private lateinit var mainBinding: ActivityMainBinding
+//private lateinit var mainBinding: ActivityMainBinding
+private lateinit var binding: ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mainBinding = ActivityMainBinding.inflate(layoutInflater)
-        val view=mainBinding.root
-        setContentView(view)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val navView: BottomNavigationView = binding.navView
 
+        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.navigation_principal, R.id.navigation_gastos, R.id.navigation_historial,R.id.navigation_ganancias
+            )
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
         //val fragmentManager=supportFragmentManager
         //val fragmentTransaction=fragmentManager.beginTransaction()
         //val splashFragment=SplashFragment()
@@ -37,14 +52,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun goToFragmentin() {
+    //private fun goToFragmentin() {
         //ingresarFragment
         /*val fragmentManager=supportFragmentManager
         val fragmentTransaction=fragmentManager.beginTransaction()
         val fragmentinicio=ingresarFragment()
         fragmentTransaction.replace(R.id.fragmentContainerView2,fragmentinicio).commit()
 */      //Navigation.findNavController(this,R.id.fragmentContainerV).navigate(R.id.action_splashFragment_to_ingresarFragment)
-    }
+   // }
     //override fun OnCreateOptionMenu(menu: Menu):Boolean{
         //menuInflater.inflate(R.menu.,menu)
       //  return true

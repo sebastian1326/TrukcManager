@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_addclient"
+        android:id="@+id/navigation_principal"
         android:icon="@drawable/trucksplash"
         android:title="@string/title_añadir_c" />
 
     <item
-        android:id="@+id/navigation_addviajes"
+        android:id="@+id/navigation_gastos"
         android:icon="@drawable/ic_baseline_money_off_24"
         android:title="@string/title_añadir_v" />
 
     <item
-        android:id="@+id/navigation_ganancias"
+        android:id="@+id/navigation_historial"
         android:icon="@drawable/ic_baseline_history_24"
         android:title="@string/title_ganancias" />
 

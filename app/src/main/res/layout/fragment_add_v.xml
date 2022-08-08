@@ -8,6 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:text="Este fragmen tendra la opcion de agregar un viaje nuevo con todos los datos que se requieren"
+        android:textSize="24sp" />
 
 </FrameLayout>

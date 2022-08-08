@@ -6,27 +6,37 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.lopezing.trukcmanager.R
+import com.lopezing.trukcmanager.databinding.FragmentHistoryBinding
 
 class historyFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = historyFragment()
-    }
-
-    private lateinit var viewModel: HistoryViewModel
+    private var _binding: FragmentHistoryBinding? = null
+    private val binding get() = _binding!!
+    //private lateinit var viewModel: HistoryViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_history, container, false)
+        val historyViewModel =
+            ViewModelProvider(this).get(HistoryViewModel::class.java)
+
+        _binding = FragmentHistoryBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        val textView: TextView = binding.textPresent
+        historyViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+        return root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
+    /*override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(HistoryViewModel::class.java)
         // TODO: Use the ViewModel
-    }
+    }*/
 
 }

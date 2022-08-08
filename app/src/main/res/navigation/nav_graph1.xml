@@ -18,7 +18,11 @@
         android:id="@+id/userInFragment"
         android:name="com.lopezing.trukcmanager.ui.userin.UserInFragment"
         android:label="fragment_user_in"
-        tools:layout="@layout/fragment_user_in" />
+        tools:layout="@layout/fragment_user_in" >
+        <action
+            android:id="@+id/action_userInFragment_to_ingresarFragment"
+            app:destination="@id/ingresarFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ingresarFragment"
         android:name="com.lopezing.trukcmanager.ui.ingresar.ingresarFragment"

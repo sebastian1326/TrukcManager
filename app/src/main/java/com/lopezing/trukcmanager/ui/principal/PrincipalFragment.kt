@@ -6,27 +6,37 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.lopezing.trukcmanager.R
+import com.lopezing.trukcmanager.databinding.FragmentPrincipalBinding
 
 class PrincipalFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = PrincipalFragment()
-    }
+    private var _binding: FragmentPrincipalBinding? = null
 
-    private lateinit var viewModel: PrincipalViewModel
+    private val binding get() = _binding!!
+    //private lateinit var viewModel: PrincipalViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_principal, container, false)
+    ): View {val principalViewModel =
+        ViewModelProvider(this).get(PrincipalViewModel::class.java)
+
+        _binding = FragmentPrincipalBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        val textView: TextView = binding.textView2
+        principalViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+        return root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
+    /*override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(PrincipalViewModel::class.java)
         // TODO: Use the ViewModel
-    }
+    }*/
 
 }

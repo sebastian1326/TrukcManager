@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "971775157555",
+    "project_id": "trukcmanager",
+    "storage_bucket": "trukcmanager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971775157555:android:9960d6aa1bfe1e1daf8a46",
+        "android_client_info": {
+          "package_name": "com.lopezing.trukcmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971775157555-r0vb76irdsckcbnlmbb8kj7p99971m33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHRODWupvS14eSnenLrEdXDNTEYA0m_w8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971775157555-r0vb76irdsckcbnlmbb8kj7p99971m33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

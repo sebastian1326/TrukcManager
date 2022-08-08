@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TrukcManager</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="version">Version %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_login">"Inicio de sesion "</string>
+    <string name="intext_email">Correo</string>
+    <string name="intext_pass">Contraseña</string>
+    <string name="button_in">ingresar</string>
+    <string name="text_f">Formulario de Registro</string>
+    <string name="date_name">Nombre</string>
+    <string name="date_email">Correo electronico</string>
+    <string name="date_cell">Numero Celular</string>
+    <string name="date_pass">Contraseña</string>
+    <string name="date_cpass">Confirmar Contraseña</string>
+    <string name="date_placa">Placa del vehiculo</string>
+    <string name="register">Registrar</string>
+    <string name="tipo">Tipo vehiculo</string>
+
+    <string name="nuevo_u">nuevo</string>
+    <string name="title_house">Principal</string>
+    <string name="title_gastos">Gastos</string>
+    <string name="title_history">Historial</string>
+    <string name="title_cash">Gastos</string>
+    <string name="title_añadir_c">Añadir cliente</string>
+    <string name="title_añadir_v">Añadir viaje</string>
+    <string name="title_ganancias">Ganancias</string>
+    <string-array name="Tipo_auto">
+        <item>Tracto Camion</item>
+        <item>Doble Troque</item>
+        <item>Camion</item>
+        <item>Turbo</item>
+        <item>Camioneta</item>
+        <item>Automovil</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/addCFragment2">
+
+    <fragment
+        android:id="@+id/addCFragment2"
+        android:name="com.lopezing.trukcmanager.ui.addcliente.addCFragment"
+        android:label="fragment_add_c"
+        tools:layout="@layout/fragment_add_c" />
+    <fragment
+        android:id="@+id/addVFragment2"
+        android:name="com.lopezing.trukcmanager.ui.addviaje.addVFragment"
+        android:label="fragment_add_v"
+        tools:layout="@layout/fragment_add_v" />
+    <fragment
+        android:id="@+id/historyFragment2"
+        android:name="com.lopezing.trukcmanager.ui.historial.historyFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

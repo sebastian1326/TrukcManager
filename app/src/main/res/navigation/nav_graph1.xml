@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph1"
+    app:startDestination="@id/ingresarFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.lopezing.trukcmanager.ui.Splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_ingresarFragment"
+            app:destination="@id/ingresarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInFragment"
+        android:name="com.lopezing.trukcmanager.ui.userin.UserInFragment"
+        android:label="fragment_user_in"
+        tools:layout="@layout/fragment_user_in" />
+    <fragment
+        android:id="@+id/ingresarFragment"
+        android:name="com.lopezing.trukcmanager.ui.ingresar.ingresarFragment"
+        android:label="fragment_ingresar"
+        tools:layout="@layout/fragment_ingresar" >
+        <action
+            android:id="@+id/action_ingresarFragment_to_userInFragment2"
+            app:destination="@id/userInFragment" />
+        <action
+            android:id="@+id/action_ingresarFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="com.lopezing.trukcmanager.ui.principal.PrincipalFragment"
+        android:label="@string/title_house"
+        tools:layout="@layout/fragment_principal" />
+    <fragment
+        android:id="@+id/pagosFragment"
+        android:name="com.lopezing.trukcmanager.ui.Pagos.PagosFragment"
+        android:label="@string/title_ganancias"
+        tools:layout="@layout/fragment_pagos" />
+    <fragment
+        android:id="@+id/gastosFragment"
+        android:name="com.lopezing.trukcmanager.ui.Gastos.GastosFragment"
+        android:label="@string/title_gastos"
+        tools:layout="@layout/fragment_gastos" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.lopezing.trukcmanager.ui.historial.historyFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

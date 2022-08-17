@@ -33,26 +33,26 @@
             app:destination="@id/userInFragment" />
         <action
             android:id="@+id/action_ingresarFragment_to_principalFragment"
-            app:destination="@id/principalFragment" />
+            app:destination="@id/navigation_principal" />
     </fragment>
 
     <fragment
-        android:id="@+id/principalFragment"
+        android:id="@+id/navigation_principal"
         android:name="com.lopezing.trukcmanager.ui.principal.PrincipalFragment"
         android:label="@string/title_house"
         tools:layout="@layout/fragment_principal" />
     <fragment
-        android:id="@+id/pagosFragment"
+        android:id="@+id/navigation_ganancias"
         android:name="com.lopezing.trukcmanager.ui.Pagos.PagosFragment"
         android:label="@string/title_ganancias"
         tools:layout="@layout/fragment_pagos" />
     <fragment
-        android:id="@+id/gastosFragment"
+        android:id="@+id/navigation_gastos"
         android:name="com.lopezing.trukcmanager.ui.Gastos.GastosFragment"
         android:label="@string/title_gastos"
         tools:layout="@layout/fragment_gastos" />
     <fragment
-        android:id="@+id/historyFragment"
+        android:id="@+id/navigation_historial"
         android:name="com.lopezing.trukcmanager.ui.historial.historyFragment"
         android:label="@string/title_history"
         tools:layout="@layout/fragment_history" />

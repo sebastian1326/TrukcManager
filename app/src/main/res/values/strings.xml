@@ -27,6 +27,10 @@
     <string name="title_añadir_c">Añadir cliente</string>
     <string name="title_añadir_v">Añadir viaje</string>
     <string name="title_ganancias">Ganancias</string>
+    <string name="title_mantenimiento">Mantenimiento</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="navigation_drawer_open">open</string>
+
     <string-array name="Tipo_auto">
         <item>Tracto Camion</item>
         <item>Doble Troque</item>

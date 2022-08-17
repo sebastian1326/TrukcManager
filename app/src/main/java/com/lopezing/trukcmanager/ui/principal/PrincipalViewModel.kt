@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class PrincipalViewModel : ViewModel() {
     // TODO: Implement the ViewModel
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "En este fragmento se mostrara la ventana principal, la cual contendra unas opciones para ingresar los datos solicitados para el ciae"
     }
     val text: LiveData<String> = _text
 }

@@ -34,11 +34,12 @@
             android:id="@+id/intext_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Correo" />
+            android:hint="Correo"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/intext_pass"
+        android:id="@+id/text_pass"
         android:layout_width="0dp"
         android:layout_height="58dp"
         android:layout_marginStart="16dp"
@@ -49,35 +50,37 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/intext_pass"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Contraseña" />
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="@string/button_in"
+        android:textColor="@color/primary_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intext_pass" />
+        app:layout_constraintTop_toBottomOf="@+id/text_pass" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_new"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="312dp"
-        android:layout_marginTop="144dp"
         android:layout_marginEnd="43dp"
         android:clickable="true"
         android:contentDescription="@string/nuevo_u"
         android:src="@android:drawable/ic_input_add"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intext_pass" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
         android:id="@+id/text_new_u"

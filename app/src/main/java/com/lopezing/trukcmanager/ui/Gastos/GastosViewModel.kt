@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 
 class GastosViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "Este fragmento se a diseñado para contener los gastos por viaje del vehiculo"
     }
     val text: LiveData<String> = _text
 }

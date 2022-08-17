@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group>
     <item
-        android:id="@+id/navigation_principal"
-        android:icon="@drawable/trucksplash"
+        android:id="@+id/navigation_addcliente"
+        android:icon="@drawable/ic_baseline_client_add_24"
         android:title="@string/title_añadir_c" />
 
     <item
-        android:id="@+id/navigation_gastos"
-        android:icon="@drawable/ic_baseline_money_off_24"
+        android:id="@+id/navigation_addviaje"
+        android:icon="@drawable/ic_baseline_viaje_add_24"
         android:title="@string/title_añadir_v" />
 
     <item
-        android:id="@+id/navigation_historial"
-        android:icon="@drawable/ic_baseline_history_24"
+        android:id="@+id/navigation_ganancias"
+        android:icon="@drawable/ic_baseline_attach_money_24"
         android:title="@string/title_ganancias" />
+    <item
+        android:id="@+id/navigation_mantenimiento"
+        android:icon="@drawable/ic_baseline_settings_truck_24"
+        android:title="@string/title_mantenimiento" />
+    </group>
+    <item android:title="AJUSTES">
+        <menu>
+            <item
+                android:id="@+id/navigation_cambio_cuenta"
+                android:icon="@drawable/ic_baseline_settings_truck_24"
+                android:title="CAMBIAR CUENTA" />
+            <item
+                android:id="@+id/navigation_sesion"
+                android:icon="@drawable/ic_baseline_settings_truck_24"
+                android:title="CERRAR SESION" />
+
+        </menu>
+    </item>
 
 </menu>

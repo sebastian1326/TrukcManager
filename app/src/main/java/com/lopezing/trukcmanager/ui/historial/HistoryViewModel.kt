@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 
 class HistoryViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
-        value = "ESte fragmento contendra el historial del vieje que esta en procesi"
+        value = "Este fragmento contendra el historial del vieje que esta en proceso"
     }
     val text: LiveData<String> = _text
 }

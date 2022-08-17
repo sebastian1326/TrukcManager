@@ -43,7 +43,12 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        /*val timer= Timer()
+        timer.schedule(
+            timerTask {
+                setTheme(R.style.Theme_TrukcManager)
+            },1000
+        )*/
         //val navView2: Toolbar = binding.toolbar
         val navView: BottomNavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_activity_main)

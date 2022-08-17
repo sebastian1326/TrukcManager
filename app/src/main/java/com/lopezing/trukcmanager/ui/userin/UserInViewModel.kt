@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.lopezing.trukcmanager.data.ResourceRemote
 import com.lopezing.trukcmanager.data.UserRepository
+import com.lopezing.trukcmanager.model.User
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -20,8 +21,15 @@ class UserInViewModel : ViewModel() {
     private val _registerSuccess : MutableLiveData<String?> = MutableLiveData()
     val registerSuccess : LiveData<String?> = _registerSuccess
 
-    fun checkIn(email: String, password: String, cpassword: String) {
-        if (email.isEmpty() || password.isEmpty() || cpassword.isEmpty())
+    fun checkIn(
+        email: String,
+        password: String,
+        cpassword: String,
+        name: String,
+        cell: String,
+        placa: String
+    ) {
+        if (email.isEmpty() || password.isEmpty() || cpassword.isEmpty() || name.isEmpty() || cell.isEmpty() || placa.isEmpty())
             _msgError.value="Porfavor digite todos los campos!"
         else
             if (password==cpassword) {
@@ -59,6 +67,10 @@ class UserInViewModel : ViewModel() {
             }
             else
                 _msgError.value="Contraseñas no coinciden, verifique que sean iguales"
+    }
+
+    fun createUser(uid: String?, name: String, email: String, cell: String, placa: String) {
+        val user= User(uid,name,email,cell,placa)
     }
     // TODO: Implement the ViewModel
 }

@@ -9,8 +9,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
-import com.lopezing.trukcmanager.R
-import com.lopezing.trukcmanager.databinding.ActivityMainBinding
 import com.lopezing.trukcmanager.databinding.FragmentUserInBinding
 
 class UserInFragment : Fragment() {
@@ -28,13 +26,16 @@ class UserInFragment : Fragment() {
         }
         userInViewModel.registerSuccess.observe(viewLifecycleOwner){ user->
             showErrormsg("Usuario, registrado")
+            with(userInBinding){
+                userInViewModel.createUser(user,nameText.text.toString(),emailText.text.toString(),cellText.text.toString(),placaText.text.toString())
+            }
             inIngresar()
         }
         val view=userInBinding.root
 
         with(userInBinding) {
             registerButton.setOnClickListener {
-                userInViewModel.checkIn(emailText.text.toString(),passText.text.toString(),cpassText.text.toString())
+                userInViewModel.checkIn(emailText.text.toString(),passText.text.toString(),cpassText.text.toString(),nameText.text.toString(),cellText.text.toString(),placaText.text.toString())
         }
         }
         return userInBinding.root

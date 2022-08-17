@@ -35,7 +35,8 @@ class ingresarFragment : Fragment() {
             showErrormsg(msg)
         }
         ingresarViewModel.registerSuccess.observe(viewLifecycleOwner){ user->
-            showErrormsg("Usuario, registrado")
+            showErrormsg("Usuario, creado")
+
             InLoad()
         }
         val view=ingresarBinding.root

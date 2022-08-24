@@ -1,4 +1,4 @@
-package com.lopezing.trukcmanager.ui.Pagos
+package com.lopezing.trukcmanager.ui.Mantenimiento
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -7,27 +7,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.lopezing.trukcmanager.databinding.FragmentPagosBinding
+import com.lopezing.trukcmanager.databinding.FragmentHistoryBinding
 
-class PagosFragment : Fragment() {
+class MantenimientoFragment : Fragment() {
 
-
-    //private lateinit var viewModel: PagosViewModel
-    private var _binding: FragmentPagosBinding? = null
+    private var _binding: FragmentHistoryBinding? = null
     private val binding get() = _binding!!
+    //private lateinit var viewModel: HistoryViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val pagosViewModel =
-            ViewModelProvider(this).get(PagosViewModel::class.java)
+        val historyViewModel =
+            ViewModelProvider(this).get(MantenimientoViewModel::class.java)
 
-        _binding = FragmentPagosBinding.inflate(inflater, container, false)
+        _binding = FragmentHistoryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textPresent
-        pagosViewModel.text.observe(viewLifecycleOwner) {
+        historyViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
@@ -35,7 +34,7 @@ class PagosFragment : Fragment() {
 
     /*override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(PagosViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(HistoryViewModel::class.java)
         // TODO: Use the ViewModel
     }*/
 

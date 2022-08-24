@@ -41,7 +41,7 @@ class ingresarFragment : Fragment() {
         }
         val view=ingresarBinding.root
         with(ingresarBinding){
-            buttonNew.setOnClickListener{
+            textNewU.setOnClickListener{
                 //    Navigation.findNavController(this,R.id.container).navigate(R.id.userInFragment)
                 //    findNavController().navigate(ingresarFragmentDirection)
                 findNavController().navigate(ingresarFragmentDirections.actionIngresarFragmentToUserInFragment2())
@@ -54,6 +54,7 @@ class ingresarFragment : Fragment() {
 
 
             }
+
         }
 
         //fun splashCamb(){

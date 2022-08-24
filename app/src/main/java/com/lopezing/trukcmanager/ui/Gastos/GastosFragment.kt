@@ -7,10 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.lopezing.trukcmanager.R
 import com.lopezing.trukcmanager.databinding.FragmentGastosBinding
-import com.lopezing.trukcmanager.databinding.FragmentPrincipalBinding
-import com.lopezing.trukcmanager.ui.principal.PrincipalViewModel
 
 class GastosFragment : Fragment() {
 

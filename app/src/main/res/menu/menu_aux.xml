@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <group>
     <item
-        android:id="@+id/navigation_addcliente"
-        android:icon="@drawable/ic_baseline_client_add_24"
-        android:title="@string/title_añadir_c" />
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_menu_option"
+
+        android:title="@string/nuevo_register"
+        app:showAsAction="ifRoom" />
+    <group>
 
     <item
         android:id="@+id/navigation_addviaje"
         android:icon="@drawable/ic_baseline_viaje_add_24"
         android:title="@string/title_añadir_v" />
 
-    <item
-        android:id="@+id/navigation_ganancias"
-        android:icon="@drawable/ic_baseline_attach_money_24"
-        android:title="@string/title_ganancias" />
+
     <item
         android:id="@+id/navigation_mantenimiento"
         android:icon="@drawable/ic_baseline_settings_truck_24"

@@ -10,14 +10,16 @@
         android:id="@+id/navigation_gastos"
         android:icon="@drawable/ic_baseline_money_off_24"
         android:title="@string/title_gastos" />
-
     <item
-        android:id="@+id/navigation_historial"
+        android:id="@+id/navigation_viajes"
         android:icon="@drawable/ic_baseline_history_24"
-        android:title="@string/title_history" />
+        android:title="@string/title_viajes" />
     <item
-        android:id="@+id/navigation_ganancias"
-        android:icon="@drawable/ic_baseline_attach_money_24"
-        android:title="@string/title_ganancias" />
-
+        android:id="@+id/navigation_mantenimiento"
+        android:icon="@drawable/ic_baseline_settings_truck_24"
+        android:title="@string/title_mantenimiento" />
+    <item
+        android:id="@+id/navigation_services"
+        android:icon="@drawable/ic_baseline_viaje_add_24"
+        android:title="@string/title_services" />
 </menu>

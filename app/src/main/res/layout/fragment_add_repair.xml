@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.addviaje.addVFragment">
+    tools:context=".ui.addRepair.AddRepairFragment">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Este fragmen tendra la opcion de agregar un viaje nuevo con todos los datos que se requieren"
+        android:id="@+id/text_repair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_repair"
         android:textSize="24sp" />
 
 </FrameLayout>

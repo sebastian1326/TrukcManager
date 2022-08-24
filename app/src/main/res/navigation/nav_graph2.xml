@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/addCFragment2"
-        android:name="com.lopezing.trukcmanager.ui.addcliente.addCFragment"
+        android:name="com.lopezing.trukcmanager.ui.addRepair.AddRepairFragment"
         android:label="fragment_add_c"
-        tools:layout="@layout/fragment_add_c" />
+        tools:layout="@layout/fragment_add_repair" />
     <fragment
         android:id="@+id/addVFragment2"
-        android:name="com.lopezing.trukcmanager.ui.addviaje.addVFragment"
+        android:name="com.lopezing.trukcmanager.ui.Services.ServicesFragment"
         android:label="fragment_add_v"
-        tools:layout="@layout/fragment_add_v" />
+        tools:layout="@layout/fragment_services" />
     <fragment
         android:id="@+id/historyFragment2"
-        android:name="com.lopezing.trukcmanager.ui.historial.historyFragment"
+        android:name="com.lopezing.trukcmanager.ui.Mantenimiento.MantenimientoFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
 </navigation>

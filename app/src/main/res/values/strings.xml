@@ -18,18 +18,19 @@
     <string name="date_placa">Placa del vehiculo</string>
     <string name="register">Registrar</string>
     <string name="tipo">Tipo vehiculo</string>
-
-    <string name="nuevo_u">nuevo</string>
+    <string name="nuevo_register"><u>Registrar</u></string>
     <string name="title_house">Principal</string>
     <string name="title_gastos">Gastos</string>
     <string name="title_history">Historial</string>
     <string name="title_cash">Gastos</string>
-    <string name="title_añadir_c">Añadir cliente</string>
+    <string name="title_services">Servicios</string>
     <string name="title_añadir_v">Añadir viaje</string>
-    <string name="title_ganancias">Ganancias</string>
+    <string name="title_viajes">Viajes</string>
     <string name="title_mantenimiento">Mantenimiento</string>
     <string name="navigation_drawer_close">close</string>
     <string name="navigation_drawer_open">open</string>
+    <string name="text_repair" />
+    <string name="text_services" />
 
     <string-array name="Tipo_auto">
         <item>Tracto Camion</item>

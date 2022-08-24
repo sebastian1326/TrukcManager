@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph1"
-    app:startDestination="@id/ingresarFragment">
+    app:startDestination="@id/navigation_principal">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -42,18 +42,23 @@
         android:label="@string/title_house"
         tools:layout="@layout/fragment_principal" />
     <fragment
-        android:id="@+id/navigation_ganancias"
-        android:name="com.lopezing.trukcmanager.ui.Pagos.PagosFragment"
-        android:label="@string/title_ganancias"
-        tools:layout="@layout/fragment_pagos" />
+        android:id="@+id/navigation_viajes"
+        android:name="com.lopezing.trukcmanager.ui.Viajes.ViajesFragment"
+        android:label="@string/title_viajes"
+        tools:layout="@layout/fragment_viajes" />
     <fragment
         android:id="@+id/navigation_gastos"
         android:name="com.lopezing.trukcmanager.ui.Gastos.GastosFragment"
         android:label="@string/title_gastos"
         tools:layout="@layout/fragment_gastos" />
     <fragment
-        android:id="@+id/navigation_historial"
-        android:name="com.lopezing.trukcmanager.ui.historial.historyFragment"
-        android:label="@string/title_history"
+        android:id="@+id/navigation_mantenimiento"
+        android:name="com.lopezing.trukcmanager.ui.Mantenimiento.MantenimientoFragment"
+        android:label="@string/title_mantenimiento"
         tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navigation_services"
+        android:name="com.lopezing.trukcmanager.ui.Services.ServicesFragment"
+        android:label="@string/title_services"
+        tools:layout="@layout/fragment_services" />
 </navigation>
